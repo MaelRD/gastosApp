@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  --color-bg: #f7f4ed;
+  --color-surface: color-mix(in oklch, #c7d3c0 38%, #f7f4ed);
+  --color-text: #201e1d;
+  --color-divider: color-mix(in srgb, #201e1d 16%, transparent);
+
+  --color-accent: #8fa28a;
+  --color-accent-100: color-mix(in oklch, #8fa28a 12%, white);
+  --color-accent-200: color-mix(in oklch, #8fa28a 28%, white);
+  --color-accent-300: color-mix(in oklch, #8fa28a 48%, white);
+  --color-accent-400: color-mix(in oklch, #8fa28a 72%, white);
+  --color-accent-500: #8fa28a;
+  --color-accent-600: color-mix(in oklch, #8fa28a 88%, black);
+  --color-accent-700: color-mix(in oklch, #8fa28a 72%, black);
+  --color-accent-800: color-mix(in oklch, #8fa28a 55%, black);
+  --color-accent-900: color-mix(in oklch, #8fa28a 40%, black);
+
+  --color-accent-2: #c8a96b;
+  --color-accent-2-100: color-mix(in oklch, #c8a96b 12%, white);
+  --color-accent-2-200: color-mix(in oklch, #c8a96b 28%, white);
+  --color-accent-2-300: color-mix(in oklch, #c8a96b 48%, white);
+  --color-accent-2-400: color-mix(in oklch, #c8a96b 72%, white);
+  --color-accent-2-500: #c8a96b;
+  --color-accent-2-600: color-mix(in oklch, #c8a96b 88%, black);
+  --color-accent-2-700: color-mix(in oklch, #c8a96b 72%, black);
+  --color-accent-2-800: color-mix(in oklch, #c8a96b 55%, black);
+  --color-accent-2-900: color-mix(in oklch, #c8a96b 40%, black);
+
+  --color-neutral-100: #f8f4f4;
+  --color-neutral-200: #eae7e7;
+  --color-neutral-300: #d7d3d3;
+  --color-neutral-400: #bab6b6;
+  --color-neutral-500: #9b9797;
+  --color-neutral-600: #7d7979;
+  --color-neutral-700: #605d5d;
+  --color-neutral-800: #444141;
+  --color-neutral-900: #2d2b2b;
+
+  --font-heading: 'Source Serif 4', system-ui, sans-serif;
+  --font-heading-weight: 600;
+  --font-body: 'Source Serif 4', system-ui, sans-serif;
+
+  --space-1: 5px;
+  --space-2: 10px;
+  --space-3: 15px;
+  --space-4: 20px;
+  --space-6: 30px;
+  --space-8: 40px;
+
+  --radius-sm: 1px;
+  --radius-md: 2px;
+  --radius-lg: 4px;
+
+  --shadow-sm: 0 1px 2px color-mix(in srgb, #2d2b2b 14%, transparent);
+  --shadow-md: 0 3px 10px color-mix(in srgb, #2d2b2b 16%, transparent);
+  --shadow-lg: 0 12px 32px color-mix(in srgb, #2d2b2b 22%, transparent);
+
+  /* Semantic colors for balances/danger actions — kept separate from the
+     accent-700 ramp so they can be re-tuned for dark backgrounds without
+     touching every screen that reads a balance sign. */
+  --color-positive: var(--color-accent-700);
+  --color-negative: var(--color-accent-2-700);
+}
+
+:root[data-theme='dark'] {
+  --color-bg: var(--color-neutral-900);
+  --color-surface: var(--color-neutral-800);
+  --color-text: var(--color-neutral-100);
+  --color-divider: rgba(248, 244, 244, 0.16);
+  --color-positive: var(--color-accent-300);
+  --color-negative: var(--color-accent-2-300);
+}

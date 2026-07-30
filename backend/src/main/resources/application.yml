@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: gastos-app
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/gastosapp
+    username: gastosapp
+    password: gastosapp
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
